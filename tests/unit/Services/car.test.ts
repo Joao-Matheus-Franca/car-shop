@@ -74,4 +74,8 @@ describe('Testes unitários da camada Service para rota de carros', function () 
 
     expect(result).to.be.deep.equal(carOutput);
   });
+
+  afterEach(function () {
+    sinon.restore();
+  });
 });
